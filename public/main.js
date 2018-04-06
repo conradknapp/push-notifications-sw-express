@@ -53,7 +53,7 @@ const vapidPublicKey =
 const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
 
 const sendToServer = subscription => {
-  return fetch("http://localhost:4000/api/subscription", {
+  return fetch("/api/subscription", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
