@@ -48,8 +48,7 @@ app.get("/sw.js", (req, res) => {
 });
 
 app.post("/api/subscription", (req, res) => {
-  console.log(req.body);
-  var dataToSend = "hello there";
+  const dataToSend = "hello there";
   const pushSubscription = req.body;
 
   res.json({ data: pushSubscription });
